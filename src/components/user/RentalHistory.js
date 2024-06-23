@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { getCurrentUser } from '../services/authService';
-import '../styles/BooksPage.css';
-import RentalModal from './RentalModal';
-import UserNavbar from '../navbar/UserNavbar';
+import { getCurrentUser } from '../../services/authService';
+import '../../styles/BooksPage.css';
+import RentalModal from '../modals/RentalModal';
+import UserNavbar from '../../navbar/UserNavbar';
 
 const RentalHistory = () => {
     const [rentalHistory, setRentalHistory] = useState([]);

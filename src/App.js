@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import HomePage from './components/HomePage';
 import Login from './components/Login';
 import Register from './components/Register';
-import UserDashboard from './components/UserDashboard';
-import AdminDashboard from './components/AdminDashboard';
-import RentalHistory from './components/RentalHistory';
-import CurrentRentals from './components/CurrentRentals';
+import RentalHistory from './components/user/RentalHistory';
+import CurrentRentals from './components/user/CurrentRentals';
 import { getCurrentUser } from './services/authService';
-import BookOrders from './components/BookOrder';
+import BookOrders from './components/user/BookOrder';
+import AdminDashboard from './components/dashboards/AdminDashboard';
+import UserDashboard from './components/dashboards/UserDashboard';
 
 const App = () => {
     const user = getCurrentUser();

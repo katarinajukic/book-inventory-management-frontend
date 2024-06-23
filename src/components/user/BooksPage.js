@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../styles/BooksPage.css'; 
-import BookModal from './BookModal';
-import { getCurrentUser } from '../services/authService';
+import '../../styles/BooksPage.css'; 
+import BookModal from '../modals/BookModal';
+import { getCurrentUser } from '../../services/authService';
 
 const BooksPage = () => {
     const [books, setBooks] = useState([]);

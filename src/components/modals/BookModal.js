@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import '../styles/BookModal.css';
+import '../../styles/BookModal.css';
 import axios from 'axios';
-import { getCurrentUser } from '../services/authService';
+import { getCurrentUser } from '../../services/authService';
 
 Modal.setAppElement('#root');
 

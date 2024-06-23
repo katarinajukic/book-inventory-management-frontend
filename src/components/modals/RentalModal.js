@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import '../styles/BookModal.css'; 
+import '../../styles/BookModal.css';
 
 Modal.setAppElement('#root');
 

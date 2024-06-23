@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { getCurrentUser } from '../services/authService';
-import BookOrderService from '../services/bookOrderService';
-import '../styles/BooksPage.css';
-import UserNavbar from '../navbar/UserNavbar';
+import { getCurrentUser } from '../../services/authService';
+import BookOrderService from '../../services/bookOrderService';
+import '../../styles/BooksPage.css';
+import UserNavbar from '../../navbar/UserNavbar';
 
 const API_URL = 'http://localhost:8080/api/v1/books/orders';
 

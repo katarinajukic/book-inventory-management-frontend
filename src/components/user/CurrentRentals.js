@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { getCurrentUser } from '../services/authService';
-import RentalModal from './RentalModal';
-import UserNavbar from '../navbar/UserNavbar';
+import { getCurrentUser } from '../../services/authService';
+import RentalModal from '../modals/RentalModal';
+import UserNavbar from '../../navbar/UserNavbar';
 
 const CurrentRentals = () => {
     const [currentRentals, setCurrentRentals] = useState([]);
