@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { fetchBookOrders, acceptBookOrder, rejectBookOrder, markBookOrderAsDone } from '../../services/adminBookOrderService'; // Adjust the import according to your file structure
-import AdminNavbar from '../../navbar/AdminNavbar'; // Adjust the import according to your file structure
-import '../../styles/BooksPage.css'; // Import the CSS file
+import { fetchBookOrders, acceptBookOrder, rejectBookOrder, markBookOrderAsDone } from '../../services/adminBookOrderService';
+import AdminNavbar from '../../navbar/AdminNavbar'; 
+import '../../styles/BooksPage.css';
 import AdminBookOrderModal from '../modals/AdminBookOrderModal';
 
 const AdminBookOrder = () => {
@@ -17,7 +17,7 @@ const AdminBookOrder = () => {
             setLoading(true);
             try {
                 const data = await fetchBookOrders();
-                setOrders(data || []); // Adjusted to use 'content' from the response
+                setOrders(data || []);
                 setLoading(false);
             } catch (error) {
                 setError(error);
@@ -41,12 +41,10 @@ const AdminBookOrder = () => {
     const handleAccept = async (order) => {
         try {
             await acceptBookOrder(order.id);
-            // Update the local order status to ACCEPTED
             const updatedOrders = orders.map(o => o.id === order.id ? { ...o, status: 'ACCEPTED' } : o);
             setOrders(updatedOrders);
         } catch (error) {
             console.error('Error accepting order:', error);
-            // Handle error as needed
         }
         closeModal();
     };
@@ -54,12 +52,10 @@ const AdminBookOrder = () => {
     const handleReject = async (order) => {
         try {
             await rejectBookOrder(order.id);
-            // Update the local order status to REJECTED
             const updatedOrders = orders.map(o => o.id === order.id ? { ...o, status: 'REJECTED' } : o);
             setOrders(updatedOrders);
         } catch (error) {
             console.error('Error rejecting order:', error);
-            // Handle error as needed
         }
         closeModal();
     };
@@ -67,12 +63,10 @@ const AdminBookOrder = () => {
     const handleMarkAsDone = async (order) => {
         try {
             await markBookOrderAsDone(order.id);
-            // Update the local order status to DONE
             const updatedOrders = orders.map(o => o.id === order.id ? { ...o, status: 'DONE' } : o);
             setOrders(updatedOrders);
         } catch (error) {
             console.error('Error marking order as done:', error);
-            // Handle error as needed
         }
         closeModal();
     };

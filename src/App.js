@@ -10,6 +10,7 @@ import BookOrders from './components/user/BookOrder';
 import AdminDashboard from './components/dashboards/AdminDashboard';
 import UserDashboard from './components/dashboards/UserDashboard';
 import AdminBookOrder from './components/admin/AdminBookOrder';
+import AdminRental from './components/admin/AdminRental';
 
 const App = () => {
     const user = getCurrentUser();
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/orders" element={<BookOrders />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/admin/orders" element={<AdminBookOrder />} />
+        <Route path="/admin/rentals" element={<AdminRental />} />
       </Routes>
     </Router>
     );

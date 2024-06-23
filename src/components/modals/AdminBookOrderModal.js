@@ -6,19 +6,19 @@ Modal.setAppElement('#root');
 
 const AdminBookOrderModal = ({ isOpen, onRequestClose, order, onAccept, onReject, onMarkAsDone }) => {
     const handleAccept = () => {
-        onAccept(order); // Call the onAccept function with the order object
+        onAccept(order);
     };
 
     const handleReject = () => {
-        onReject(order); // Call the onReject function with the order object
+        onReject(order);
     };
 
     const handleMarkAsDone = () => {
-        onMarkAsDone(order); // Call the onMarkAsDone function with the order object
+        onMarkAsDone(order);
     };
 
     const handleClose = () => {
-        onRequestClose(); // Close the modal
+        onRequestClose();
     };
 
     if (!order) return null;

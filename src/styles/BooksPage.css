@@ -7,7 +7,7 @@
     background-image: url('../img/homepage.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Ensure full height of viewport */
+    height: 100vh;
 }
 
 .books-header {
@@ -26,7 +26,7 @@
 .books-header h2 {
     font-size: 1.5rem;
     color: #fff;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 .books-header .filter-section {
@@ -53,8 +53,8 @@
 .books-header form {
     display: flex;
     align-items: center;
-    flex-grow: 1; /* Take remaining space */
-    margin-left: 20px; /* Add spacing between h2 and form */
+    flex-grow: 1; 
+    margin-left: 20px;
 }
 
 .books-header input[type="text"] {
