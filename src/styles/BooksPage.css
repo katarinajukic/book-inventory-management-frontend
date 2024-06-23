@@ -29,6 +29,27 @@
     margin: 0; /* Remove default margin */
 }
 
+.books-header .filter-section {
+    display: flex;
+    align-items: center;
+}
+
+.books-header label {
+    color: #fff;
+    margin-right: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.books-header select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
 .books-header form {
     display: flex;
     align-items: center;

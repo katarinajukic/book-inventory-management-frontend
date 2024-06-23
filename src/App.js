@@ -9,6 +9,7 @@ import { getCurrentUser } from './services/authService';
 import BookOrders from './components/user/BookOrder';
 import AdminDashboard from './components/dashboards/AdminDashboard';
 import UserDashboard from './components/dashboards/UserDashboard';
+import AdminBookOrder from './components/admin/AdminBookOrder';
 
 const App = () => {
     const user = getCurrentUser();
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/rentals/current" element={<CurrentRentals />} />
         <Route path="/orders" element={<BookOrders />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/orders" element={<AdminBookOrder />} />
       </Routes>
     </Router>
     );

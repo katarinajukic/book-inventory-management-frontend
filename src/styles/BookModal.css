@@ -24,7 +24,9 @@
 }
 
 .book-modal .close-button,
-.book-modal .rental-button {
+.book-modal .rental-button,
+.book-modal .accept-button,
+.book-modal .reject-button {
     margin-top: 15px;
     padding: 10px 20px;
     border: none;
@@ -48,6 +50,26 @@
 }
 
 .book-modal .rental-button:hover {
+    background-color: #681818;
+}
+
+.book-modal .accept-button {
+    background-color: #5ec031;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.book-modal .accept-button:hover {
+    background-color: #1f6818;
+}
+
+.book-modal .reject-button {
+    background-color: #a52c2c;
+    color: #fff;
+    margin-right: 240px;
+}
+
+.book-modal .reject-button:hover {
     background-color: #681818;
 }
 
