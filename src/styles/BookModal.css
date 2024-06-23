@@ -1,0 +1,58 @@
+.book-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    z-index: 1000;
+    color: #fff;
+}
+
+.book-modal h2 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.book-modal p {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.book-modal .close-button,
+.book-modal .rental-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-modal .close-button {
+    background-color: #333;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.book-modal .close-button:hover {
+    background-color: #555;
+}
+
+.book-modal .rental-button {
+    background-color: #a52c2c;
+    color: #fff;
+}
+
+.book-modal .rental-button:hover {
+    background-color: #681818;
+}
+
+.book-modal .message {
+    margin-top: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+}

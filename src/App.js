@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import Login from './components/Login';
+import Register from './components/Register';
+import UserDashboard from './components/UserDashboard';
+import AdminDashboard from './components/AdminDashboard';
+import RentalHistory from './components/RentalHistory';
+import CurrentRentals from './components/CurrentRentals';
+import { getCurrentUser } from './services/authService';
+import BookOrders from './components/BookOrder';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const user = getCurrentUser();
+
+    return (
+      <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/user-dashboard" element={<UserDashboard />} />
+        <Route path="/rentals/history" element={<RentalHistory />} />
+        <Route path="/rentals/current" element={<CurrentRentals />} />
+        <Route path="/orders" element={<BookOrders />} />
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+      </Routes>
+    </Router>
+    );
+};
 
 export default App;

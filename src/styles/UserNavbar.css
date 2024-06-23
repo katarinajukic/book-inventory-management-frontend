@@ -1,0 +1,66 @@
+.user-navbar {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+.logout-button {
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #991919;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #640b0b;
+}
+
+
+.rentals-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(30, 30, 30, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-link:hover {
+    background-color: #555;
+}
