@@ -23,6 +23,99 @@
     align-items: center;
 }
 
+.admin-header {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.admin-header h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+.admin-section {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.split-screen {
+    display: flex;
+    width: 100%;
+}
+
+.left-column, .middle-column, .right-column {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+}
+
+.create-author-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create-author-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #468024;
+    color: #fff;
+    cursor: pointer;
+}
+
+.create-author-form button:hover {
+    background-color: #555;
+}
+
+.create-author-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.authors-list {
+    margin-top: 20px;
+}
+
+.authors-list h4 {
+    color: #fff;
+}
+
+.authors-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.authors-list li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.authors-list li:hover{
+    transform: translateY(-5px);
+}
+
 .books-header h2 {
     font-size: 1.5rem;
     color: #fff;
@@ -98,7 +191,6 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     cursor: pointer;
-
 }
 
 .book-item:hover {

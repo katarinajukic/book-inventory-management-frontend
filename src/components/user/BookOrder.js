@@ -64,7 +64,7 @@ const BookOrders = () => {
               required
             />
             <button type="submit" disabled={loading}>
-              {loading ? 'Submitting...' : 'Request Book Order'}
+              {loading ? 'Submitting...' : 'Request'}
             </button>
           </form>
         </div>

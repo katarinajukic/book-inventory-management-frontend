@@ -11,6 +11,7 @@ import AdminDashboard from './components/dashboards/AdminDashboard';
 import UserDashboard from './components/dashboards/UserDashboard';
 import AdminBookOrder from './components/admin/AdminBookOrder';
 import AdminRental from './components/admin/AdminRental';
+import AdminCreateBookPage from './components/admin/AdminCreateBookPage';
 
 const App = () => {
     const user = getCurrentUser();
@@ -25,7 +26,8 @@ const App = () => {
         <Route path="/rentals/history" element={<RentalHistory />} />
         <Route path="/rentals/current" element={<CurrentRentals />} />
         <Route path="/orders" element={<BookOrders />} />
-        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/books/view" element={<AdminDashboard />} />
+        <Route path="/books/create" element={<AdminCreateBookPage />} />
         <Route path="/admin/orders" element={<AdminBookOrder />} />
         <Route path="/admin/rentals" element={<AdminRental />} />
       </Routes>

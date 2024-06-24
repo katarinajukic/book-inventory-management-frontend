@@ -44,12 +44,13 @@
 }
 
 .book-modal .rental-button {
-    background-color: #a52c2c;
+    background-color: #5ec031;
     color: #fff;
+    margin-right: 15px;
 }
 
 .book-modal .rental-button:hover {
-    background-color: #681818;
+    background-color: #1f6818;
 }
 
 .book-modal .accept-button {
@@ -76,4 +77,15 @@
     margin-top: 15px;
     color: whitesmoke;
     font-weight: bold;
+}
+
+.author-modal-input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
 }

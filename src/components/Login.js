@@ -18,7 +18,7 @@ const Login = () => {
                 const user = parseJwt(response.accessToken);
 
                 if (user && user.authorities && user.authorities.includes('ROLE_ADMIN')) {
-                    navigate('/admin-dashboard');
+                    navigate('/books/view');
                 } else if (user && user.authorities && user.authorities.includes('ROLE_USER')) {
                     navigate('/user-dashboard');
                 } else {
