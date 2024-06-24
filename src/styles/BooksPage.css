@@ -1,13 +1,21 @@
-.books-page {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     background-color: #f0f0f0;
     background-image: url('../img/homepage.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    background-attachment: fixed;
+}
+
+.books-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    overflow: hidden; 
+    padding: 20px;
 }
 
 .books-header {
@@ -47,6 +55,8 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     color: #fff;
+    overflow-y: auto;
+    max-height: calc(100vh - 280px);
 }
 
 .split-screen {
@@ -64,6 +74,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: auto;
 }
 
 .create-author-form button {
@@ -80,6 +91,16 @@
 }
 
 .create-author-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.create-author-form textarea {
     flex: 1;
     padding: 10px;
     border: none;

@@ -10,7 +10,6 @@ const AdminBookModal = ({ isOpen, onRequestClose, book }) => {
     const [message, setMessage] = useState('');
 
     const handleUpdate = () => {
-        // Implement update functionality
         setMessage('Update functionality not implemented yet.');
     };
 
@@ -22,7 +21,7 @@ const AdminBookModal = ({ isOpen, onRequestClose, book }) => {
                     headers: { Authorization: `Bearer ${currentUser.accessToken}` }
                 });
                 setMessage('Book deleted successfully.');
-                onRequestClose(); // Close the modal after deletion
+                onRequestClose();
             } catch (error) {
                 console.error('Error deleting book:', error);
                 setMessage('Error deleting book.');

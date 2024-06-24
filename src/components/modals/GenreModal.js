@@ -48,7 +48,6 @@ const GenreModal = ({ isOpen, onRequestClose, genre, fetchGenres }) => {
             />
             <button onClick={handleUpdate} className="accept-button">Update</button>
             <button onClick={handleDelete} className="reject-button">Delete</button>
-            <button onClick={onRequestClose} className="close-button">Close</button>
             {message && <p className="message">{message}</p>}
         </Modal>
     );

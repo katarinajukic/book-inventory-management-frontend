@@ -97,7 +97,7 @@ const AdminBookOrder = () => {
                 <div className="books-header">
                     <h2>Book Orders</h2>
                     <div className="filter-section">
-                        <label htmlFor="filter">Filter by status:</label>
+                        <label htmlFor="filter">Filter by Status:</label>
                         <select id="filter" value={filter} onChange={handleFilterChange}>
                             <option value="all">View all</option>
                             <option value="REQUESTED">Requested</option>

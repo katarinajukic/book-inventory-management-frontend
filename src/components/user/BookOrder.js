@@ -80,7 +80,7 @@ const BookOrders = () => {
               </div>
             ))
           ) : (
-            <p>No book orders found</p>
+            <p></p>
           )}
         </div>
       </div>

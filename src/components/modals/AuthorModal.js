@@ -12,8 +12,8 @@ const AuthorModal = ({ isOpen, onRequestClose, author, fetchAuthors }) => {
         try {
             await updateAuthor(author.id, { fullName: newFullName });
             setNewFullName('');
-            fetchAuthors(); // Refresh the author list
-            onRequestClose(); // Close the modal
+            fetchAuthors(); 
+            onRequestClose();
         } catch (error) {
             console.error('Error updating author:', error);
         }
@@ -22,8 +22,8 @@ const AuthorModal = ({ isOpen, onRequestClose, author, fetchAuthors }) => {
     const handleDelete = async () => {
         try {
             await deleteAuthor(author.id);
-            fetchAuthors(); // Refresh the author list
-            onRequestClose(); // Close the modal
+            fetchAuthors(); 
+            onRequestClose(); 
         } catch (error) {
             console.error('Error deleting author:', error);
         }
@@ -42,11 +42,8 @@ const AuthorModal = ({ isOpen, onRequestClose, author, fetchAuthors }) => {
                 required
                 className="author-modal-input"
             />
-            <div className="modal-buttons">
-                <button onClick={handleUpdate} className="accept-button">Update</button>
-                <button onClick={handleDelete} className="reject-button">Delete</button>
-                <button onClick={onRequestClose} className="close-button">Close</button>
-            </div>
+            <button onClick={handleUpdate} className="accept-button">Update</button>
+            <button onClick={handleDelete} className="reject-button">Delete</button>
         </Modal>
     );
 };

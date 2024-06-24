@@ -57,7 +57,7 @@ const CurrentRentals = () => {
                             </div>
                         ))
                     ) : (
-                        <p>No current rentals found</p>
+                        <p></p>
                     )}
                 </div>
                 <RentalModal isOpen={isModalOpen} onRequestClose={closeModal} rental={selectedRental} />
