@@ -101,7 +101,7 @@ const AdminBookPage = () => {
                     <p></p>
                 )}
             </div>
-            <AdminBookModal isOpen={isModalOpen} onRequestClose={closeModal} book={selectedBook} />
+            <AdminBookModal isOpen={isModalOpen} onRequestClose={closeModal} book={selectedBook} fetchBooks={fetchBooks} />
         </div>
     );
 };

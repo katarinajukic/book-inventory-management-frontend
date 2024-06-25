@@ -11,6 +11,8 @@
     width: 90%;
     z-index: 1000;
     color: #fff;
+    max-height: 80vh; 
+    overflow-y: auto;
 }
 
 .book-modal h2 {
