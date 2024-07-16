@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Book Inventory Management - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Role-based system - admin and user
 
-## Available Scripts
+## Home page
 
-In the project directory, you can run:
+![Screenshot from 2024-07-16 09-06-03](https://github.com/user-attachments/assets/51e6bb8c-6274-4925-8ee7-922a9c45572b)
 
-### `npm start`
+## Register
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot from 2024-07-16 09-06-31](https://github.com/user-attachments/assets/bd07a2d2-b5c3-4295-b605-012d7c32ed98)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Login
 
-### `npm test`
+![Screenshot from 2024-07-16 09-06-38](https://github.com/user-attachments/assets/9f352103-0a11-4b34-906d-a123d405a1c8)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## View all books - for admin and user
 
-### `npm run build`
+![Screenshot from 2024-07-16 09-14-44](https://github.com/user-attachments/assets/b55ad371-0bed-4795-a58a-ce12c51a349f)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ADMIN
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Book detail
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot from 2024-07-16 09-14-51](https://github.com/user-attachments/assets/c035b975-e816-455f-b701-9ead44977108)
 
-### `npm run eject`
+## Create author, genre and book
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screenshot from 2024-07-16 09-15-08](https://github.com/user-attachments/assets/53335a71-206b-409a-ae9d-21897a05dab5)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## View all book rentals
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screenshot from 2024-07-16 09-15-26](https://github.com/user-attachments/assets/dd81b6e0-5fb0-4a1b-9058-ec39c42f0f3e)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Rental detail
 
-## Learn More
+![Screenshot from 2024-07-16 09-15-29](https://github.com/user-attachments/assets/ce1af767-e381-4cea-a34d-615d771e456d)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## View all book orders
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot from 2024-07-16 09-15-42](https://github.com/user-attachments/assets/d3eb5e1a-59c7-4819-b9db-489d05bf20bb)
 
-### Code Splitting
+## Order detail
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot from 2024-07-16 09-25-34](https://github.com/user-attachments/assets/9cb57d41-07c3-413c-bc1c-1160eb173786)
 
-### Analyzing the Bundle Size
+### USER
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Book detail
 
-### Making a Progressive Web App
+![Screenshot from 2024-07-16 09-16-02](https://github.com/user-attachments/assets/20a8d57a-a4c9-4bd6-985c-75b7950cb8d1)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Book Rental History
 
-### Advanced Configuration
+![Screenshot from 2024-07-16 09-16-15](https://github.com/user-attachments/assets/0fde8784-0f1d-4797-84f3-12d7a720eb53)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Book Rental Current
 
-### Deployment
+![Screenshot from 2024-07-16 09-16-21](https://github.com/user-attachments/assets/84bdcbbf-39b5-47b0-9de1-acacbbdd27fe)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Book Rental Detail
 
-### `npm run build` fails to minify
+![Screenshot from 2024-07-16 09-16-28](https://github.com/user-attachments/assets/5227b9c3-40ec-41ce-9c38-ff34691322f5)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Book Orders
+
+![Screenshot from 2024-07-16 09-16-33](https://github.com/user-attachments/assets/402d1bee-e9fe-4184-8e34-d70ed749234c)
